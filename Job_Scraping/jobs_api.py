@@ -1,4 +1,3 @@
-# jobs_api.py
 import requests
 import pandas as pd
 import load_to_db
@@ -7,7 +6,7 @@ import load_to_db
 url = "https://jsearch.p.rapidapi.com/search"
 querystring = {"query":"Data Engineer in Ontario, Canada","page":"1","num_pages":"1","date_posted":"month"}
 headers = {
-	"X-RapidAPI-Key": "e0bbfbf5e4msh1ca295e627d2f36p1add45jsn88983127afe1",
+	"X-RapidAPI-Key": "a0139f52d4mshf129fb600694e41p10962ejsnd689f7c88b89",
 	"X-RapidAPI-Host": "jsearch.p.rapidapi.com"
 }
 
@@ -34,7 +33,9 @@ def extract_skills(c):
 def get_data_from_api():
     response = requests.get(url, headers=headers, params=querystring)
     data = response.json()
+    print(data)  # This will print the API response
     return data
+
 
 def extract_relevant_records_from_overall_data(data):
     # Initialize lists to store data
@@ -99,7 +100,6 @@ def translate_extractions_to_dataframe_and_transform(employer_website, job_id, j
 data = get_data_from_api()
 employer_website, job_id, job_employment_type, job_title, job_apply_link, job_description, job_city, job_country, job_posted_at_date, employer_company_type = extract_relevant_records_from_overall_data(data)
 df = translate_extractions_to_dataframe_and_transform(employer_website, job_id, job_employment_type, job_title, job_apply_link, job_description, job_city, job_country, job_posted_at_date, employer_company_type)
-
 
 # Create the table
 load_to_db.create_table()

@@ -7,9 +7,22 @@ import load_to_db
 url = "https://jsearch.p.rapidapi.com/search"
 querystring = {"query":"Data Engineer in Ontario, Canada","page":"1","num_pages":"20","date_posted":"month","remote_jobs_only":"true"}
 headers = {
-	"X-RapidAPI-Key": "e0bbfbf5e4msh1ca295e627d2f36p1add45jsn88983127afe1",
+	"X-RapidAPI-Key": "a0139f52d4mshf129fb600694e41p10962ejsnd689f7c88b89",
 	"X-RapidAPI-Host": "jsearch.p.rapidapi.com"
 }
+
+
+url = "https://jsearch.p.rapidapi.com/search"
+
+querystring = {"query":"Data Engineer in Ontario, Canada","page":"1","num_pages":"20","date_posted":"month","remote_jobs_only":"true","job_requirements":"under_3_years_experience"}
+
+headers = {
+	"X-RapidAPI-Key": "a0139f52d4mshf129fb600694e41p10962ejsnd689f7c88b89",
+	"X-RapidAPI-Host": "jsearch.p.rapidapi.com"
+}
+
+
+
 
 # LIST OF SKILLS
 words = ['ETL','Orchestration', 'modeling', 'python', 
@@ -89,9 +102,6 @@ def translate_extractions_to_dataframe_and_transform(employer_website, job_id, j
                  }
     job_df = pd.DataFrame(rapid_dict) # Convert to dataframe
 
-    # Filter dataframe for jobs requiring under 3 years of experience and are remote
-    job_df = job_df[(job_df['required_experience_in_months'] <= 36)]
-
     # Convert date column datatype from string to datetime
     job_df['job_posted_at_date'] = pd.to_datetime(job_df['job_posted_at_date'])
     
@@ -113,7 +123,8 @@ def translate_extractions_to_dataframe_and_transform(employer_website, job_id, j
 data = get_data_from_api()
 employer_website, job_id, job_employment_type, job_title, job_apply_link, job_description, job_city, job_country, job_posted_at_date, required_experience_in_months, job_is_remote, employer_company_type = extract_relevant_records_from_overall_data(data)
 df = translate_extractions_to_dataframe_and_transform(employer_website, job_id, job_employment_type, job_title, job_apply_link, job_description, job_city, job_country, job_posted_at_date, required_experience_in_months, job_is_remote, employer_company_type)
-
+# Write DataFrame to CSV file
+df.to_csv('data_engineering_jobs_filter.csv', index=False)
 # Print the entire dataframe
 print(df)
 

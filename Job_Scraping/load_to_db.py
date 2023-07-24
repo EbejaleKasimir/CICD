@@ -12,7 +12,7 @@ def create_table():
 
     # Define the table
     cursor.execute("""
-        DROP TABLE IF EXISTS data_engineering_jobs;
+       -- DROP TABLE IF EXISTS data_engineering_jobs;
         CREATE TABLE IF NOT EXISTS data_engineering_jobs (
             job_id TEXT PRIMARY KEY,
             employer_website TEXT,
@@ -33,6 +33,9 @@ def create_table():
     # Close the connection
     cursor.close()
     conn.close()
+
+if __name__ == "__main__":
+    create_table()
 
 def load_to_postgres(df):
     # db connection and load logic
