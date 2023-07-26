@@ -1,0 +1,37 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  background: black;
+  border: 2px ridge white;
+  box-shadow: 0px 0px 15px 5px cyan;
+  border-radius: 50%;
+  margin: 100px;
+  margin-top: 200px;
+}
+
+.circle-1 {
+  top: 0;
+  left: 0;
+  animation: circle 8s linear infinite;
+}
+
+.circle-2 {
+  top: 0;
+  left: 100px;
+  background: red;
+}
+
+.circle-3 {
+  top: 0;
+  left: 200px;
+  background: green;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: 1px solid black;
+    margin: 10px auto;
+  }
+  
