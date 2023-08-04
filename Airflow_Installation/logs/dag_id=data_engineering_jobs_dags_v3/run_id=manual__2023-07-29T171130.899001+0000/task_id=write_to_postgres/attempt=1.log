@@ -1,0 +1,38 @@
+[2023-07-29T17:12:22.815+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineering_jobs_dags_v3.write_to_postgres manual__2023-07-29T17:11:30.899001+00:00 [queued]>
+[2023-07-29T17:12:22.881+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineering_jobs_dags_v3.write_to_postgres manual__2023-07-29T17:11:30.899001+00:00 [queued]>
+[2023-07-29T17:12:22.890+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T17:12:22.924+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-29T17:12:22.926+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T17:12:23.280+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): write_to_postgres> on 2023-07-29 17:11:30.899001+00:00
+[2023-07-29T17:12:23.323+0000] {standard_task_runner.py:55} INFO - Started process 18207 to run task
+[2023-07-29T17:12:23.349+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'data_engineering_jobs_dags_v3', 'write_to_postgres', 'manual__2023-07-29T17:11:30.899001+00:00', '--job-id', '2980', '--raw', '--subdir', 'DAGS_FOLDER/load_data_v3.py', '--cfg-path', '/tmp/tmpb53vte4k']
+[2023-07-29T17:12:23.385+0000] {standard_task_runner.py:83} INFO - Job 2980: Subtask write_to_postgres
+[2023-07-29T17:12:24.385+0000] {task_command.py:389} INFO - Running <TaskInstance: data_engineering_jobs_dags_v3.write_to_postgres manual__2023-07-29T17:11:30.899001+00:00 [running]> on host f1ea17bde741
+[2023-07-29T17:12:25.559+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_engineering_jobs_dags_v3
+AIRFLOW_CTX_TASK_ID=write_to_postgres
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-29T17:11:30.899001+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-29T17:11:30.899001+00:00
+[2023-07-29T17:12:25.691+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/load_data_v3.py", line 83, in write_to_postgres
+    df = df[required_columns]
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 3464, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1)[1]
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexing.py", line 1314, in _get_listlike_indexer
+    self._validate_read_indexer(keyarr, indexer, axis)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexing.py", line 1377, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['category', 'location', 'company', 'class'] not in index"
+[2023-07-29T17:12:25.820+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=data_engineering_jobs_dags_v3, task_id=write_to_postgres, execution_date=20230729T171130, start_date=20230729T171222, end_date=20230729T171225
+[2023-07-29T17:12:26.152+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 2980 for task write_to_postgres ("['category', 'location', 'company', 'class'] not in index"; 18207)
+[2023-07-29T17:12:26.217+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-07-29T17:12:26.494+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

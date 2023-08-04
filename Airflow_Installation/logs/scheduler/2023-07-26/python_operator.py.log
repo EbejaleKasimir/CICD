@@ -1,0 +1,798 @@
+[2023-07-26T20:21:04.570+0000] {processor.py:153} INFO - Started process (PID=9119) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:21:04.573+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:21:04.576+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:21:04.576+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:21:04.645+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:21:04.643+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 23
+    print(task_id)
+    ^
+SyntaxError: positional argument follows keyword argument
+[2023-07-26T20:21:04.680+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:21:04.934+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.373 seconds
+[2023-07-26T20:21:21.763+0000] {processor.py:153} INFO - Started process (PID=9133) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:21:21.765+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:21:21.768+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:21:21.768+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:21:21.822+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:21:21.819+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 23
+    print([task_id])
+    ^
+SyntaxError: positional argument follows keyword argument
+[2023-07-26T20:21:21.824+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:21:21.912+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.154 seconds
+[2023-07-26T20:21:52.363+0000] {processor.py:153} INFO - Started process (PID=9161) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:21:52.366+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:21:52.377+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:21:52.377+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:21:52.452+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:21:52.450+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 23
+    print([task_id])
+    ^
+SyntaxError: positional argument follows keyword argument
+[2023-07-26T20:21:52.454+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:21:52.583+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.227 seconds
+[2023-07-26T20:22:03.026+0000] {processor.py:153} INFO - Started process (PID=9165) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:03.029+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:22:03.033+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:22:03.032+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:03.144+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:22:03.125+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:22:03.147+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:03.305+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.290 seconds
+[2023-07-26T20:22:33.515+0000] {processor.py:153} INFO - Started process (PID=9192) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:33.518+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:22:33.532+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:22:33.531+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:33.670+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:22:33.653+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:22:33.675+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:33.921+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.424 seconds
+[2023-07-26T20:22:47.273+0000] {processor.py:153} INFO - Started process (PID=9205) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:47.276+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:22:47.279+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:22:47.279+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:47.445+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:22:47.431+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:22:47.451+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:47.639+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.377 seconds
+[2023-07-26T20:22:48.428+0000] {processor.py:153} INFO - Started process (PID=9206) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:48.430+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:22:48.432+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:22:48.432+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:48.620+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:22:48.604+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:22:48.624+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:48.945+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.524 seconds
+[2023-07-26T20:22:49.830+0000] {processor.py:153} INFO - Started process (PID=9207) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:49.833+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:22:49.838+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:22:49.837+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:49.954+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:22:49.942+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:22:49.958+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:22:50.292+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.470 seconds
+[2023-07-26T20:23:02.112+0000] {processor.py:153} INFO - Started process (PID=9221) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:02.114+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:23:02.115+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:02.115+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:02.339+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:02.287+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:23:02.347+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:02.483+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.382 seconds
+[2023-07-26T20:23:10.680+0000] {processor.py:153} INFO - Started process (PID=9224) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:10.685+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:23:10.689+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:10.688+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:11.529+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:11.493+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:23:11.540+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:11.775+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 1.122 seconds
+[2023-07-26T20:23:12.883+0000] {processor.py:153} INFO - Started process (PID=9225) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:12.908+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:23:12.920+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:12.920+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:13.142+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:13.138+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 12
+    prin
+    ^
+IndentationError: unexpected indent
+[2023-07-26T20:23:13.146+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:13.387+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.525 seconds
+[2023-07-26T20:23:16.172+0000] {processor.py:153} INFO - Started process (PID=9226) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:16.319+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:23:16.321+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:16.321+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:16.371+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:16.369+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 12
+    print()
+    ^
+IndentationError: unexpected indent
+[2023-07-26T20:23:16.372+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:16.720+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.565 seconds
+[2023-07-26T20:23:18.709+0000] {processor.py:153} INFO - Started process (PID=9235) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:18.712+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:23:18.714+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:18.714+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:18.818+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:18.815+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 12
+    print('')
+    ^
+IndentationError: unexpected indent
+[2023-07-26T20:23:18.819+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:18.996+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.298 seconds
+[2023-07-26T20:23:23.132+0000] {processor.py:153} INFO - Started process (PID=9241) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:23.134+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:23:23.137+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:23.136+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:23.183+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:23.181+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 12
+    print('Hello world')
+    ^
+IndentationError: unexpected indent
+[2023-07-26T20:23:23.184+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:23.358+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.234 seconds
+[2023-07-26T20:23:49.014+0000] {processor.py:153} INFO - Started process (PID=9257) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:49.017+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:23:49.019+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:49.019+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:49.101+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:49.098+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 11
+    def
+       ^
+SyntaxError: invalid syntax
+[2023-07-26T20:23:49.119+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:49.375+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.378 seconds
+[2023-07-26T20:23:50.529+0000] {processor.py:153} INFO - Started process (PID=9258) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:50.531+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:23:50.533+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:50.533+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:50.725+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:50.721+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 11
+    def greet
+            ^
+SyntaxError: invalid syntax
+[2023-07-26T20:23:50.728+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:50.916+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.395 seconds
+[2023-07-26T20:23:54.098+0000] {processor.py:153} INFO - Started process (PID=9259) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:54.100+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:23:54.101+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:54.101+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:54.155+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:54.153+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 11
+    def greet_world
+                  ^
+SyntaxError: invalid syntax
+[2023-07-26T20:23:54.156+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:54.263+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.172 seconds
+[2023-07-26T20:23:55.453+0000] {processor.py:153} INFO - Started process (PID=9269) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:55.455+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:23:55.458+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:55.457+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:55.531+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:23:55.528+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 11
+    def greet_world()
+                    ^
+SyntaxError: invalid syntax
+[2023-07-26T20:23:55.532+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:23:55.863+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.425 seconds
+[2023-07-26T20:24:05.266+0000] {processor.py:153} INFO - Started process (PID=9274) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:05.284+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:24:05.321+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:24:05.320+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:06.266+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:24:06.246+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:24:06.271+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:06.787+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 1.540 seconds
+[2023-07-26T20:24:15.062+0000] {processor.py:153} INFO - Started process (PID=9286) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:15.091+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:24:15.105+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:24:15.104+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:15.611+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:24:15.589+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:24:15.619+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:15.887+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.874 seconds
+[2023-07-26T20:24:19.549+0000] {processor.py:153} INFO - Started process (PID=9290) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:19.553+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:24:19.556+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:24:19.555+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:19.663+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:24:19.648+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:24:19.667+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:19.790+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.253 seconds
+[2023-07-26T20:24:50.559+0000] {processor.py:153} INFO - Started process (PID=9314) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:50.562+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:24:50.569+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:24:50.564+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:51.305+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:24:50.629+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:24:51.353+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:24:51.671+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 1.130 seconds
+[2023-07-26T20:25:18.666+0000] {processor.py:153} INFO - Started process (PID=9335) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:25:18.680+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:25:18.682+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:25:18.682+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:25:18.931+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:25:18.911+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:25:18.939+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:25:19.223+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.566 seconds
+[2023-07-26T20:25:50.056+0000] {processor.py:153} INFO - Started process (PID=9351) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:25:50.060+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:25:50.063+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:25:50.062+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:25:50.228+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:25:50.204+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:25:50.233+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:25:50.418+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.375 seconds
+[2023-07-26T20:26:21.264+0000] {processor.py:153} INFO - Started process (PID=9379) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:26:21.267+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:26:21.270+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:26:21.269+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:26:21.351+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:26:21.339+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:26:21.355+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:26:21.742+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.483 seconds
+[2023-07-26T20:26:52.175+0000] {processor.py:153} INFO - Started process (PID=9407) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:26:52.178+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:26:52.179+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:26:52.179+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:26:52.367+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:26:52.351+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:26:52.372+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:26:52.999+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.832 seconds
+[2023-07-26T20:27:23.161+0000] {processor.py:153} INFO - Started process (PID=9423) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:27:23.164+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:27:23.166+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:27:23.166+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:27:23.263+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:27:23.244+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:27:23.273+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:27:23.662+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.514 seconds
+[2023-07-26T20:27:54.032+0000] {processor.py:153} INFO - Started process (PID=9451) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:27:54.040+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:27:54.043+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:27:54.042+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:27:54.140+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:27:54.127+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:27:54.145+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:27:54.301+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.287 seconds
+[2023-07-26T20:28:25.192+0000] {processor.py:153} INFO - Started process (PID=9466) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:28:25.195+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:28:25.197+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:28:25.196+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:28:25.267+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:28:25.256+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:28:25.271+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:28:25.386+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.198 seconds
+[2023-07-26T20:28:55.482+0000] {processor.py:153} INFO - Started process (PID=9496) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:28:55.484+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:28:55.487+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:28:55.486+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:28:55.535+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:28:55.527+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:28:55.538+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:28:55.775+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.298 seconds
+[2023-07-26T20:29:26.620+0000] {processor.py:153} INFO - Started process (PID=9522) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:29:26.623+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:29:26.628+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:29:26.628+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:29:26.715+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:29:26.699+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:29:26.723+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:29:26.930+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.319 seconds
+[2023-07-26T20:29:57.200+0000] {processor.py:153} INFO - Started process (PID=9541) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:29:57.203+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:29:57.206+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:29:57.205+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:29:57.437+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:29:57.405+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:29:57.452+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:29:57.744+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.556 seconds
+[2023-07-26T20:30:03.862+0000] {processor.py:153} INFO - Started process (PID=9551) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:30:03.886+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:30:03.891+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:30:03.890+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:30:04.136+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:30:04.121+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:30:04.143+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:30:04.419+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.565 seconds
+[2023-07-26T20:30:09.328+0000] {processor.py:153} INFO - Started process (PID=9555) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:30:09.331+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:30:09.334+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:30:09.334+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:30:09.532+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:30:09.519+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:30:09.539+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:30:09.658+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.337 seconds
+[2023-07-26T20:30:39.736+0000] {processor.py:153} INFO - Started process (PID=9571) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:30:39.738+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:30:39.740+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:30:39.740+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:30:39.806+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:30:39.798+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:30:39.811+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:30:39.979+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.248 seconds
+[2023-07-26T20:31:10.733+0000] {processor.py:153} INFO - Started process (PID=9600) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:31:10.739+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:31:10.744+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:31:10.743+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:31:10.866+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:31:10.841+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:31:10.881+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:31:11.370+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.648 seconds
+[2023-07-26T20:31:41.514+0000] {processor.py:153} INFO - Started process (PID=9628) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:31:41.517+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:31:41.519+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:31:41.519+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:31:41.562+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:31:41.554+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:31:41.565+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:31:41.838+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.331 seconds
+[2023-07-26T20:32:12.261+0000] {processor.py:153} INFO - Started process (PID=9644) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:32:12.263+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:32:12.265+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:32:12.265+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:32:12.317+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:32:12.310+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:32:12.320+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:32:12.484+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.231 seconds
+[2023-07-26T20:32:42.649+0000] {processor.py:153} INFO - Started process (PID=9673) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:32:42.658+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:32:42.660+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:32:42.660+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:32:42.700+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:32:42.693+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:32:42.703+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:32:42.952+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.311 seconds
+[2023-07-26T20:33:13.423+0000] {processor.py:153} INFO - Started process (PID=9701) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:33:13.425+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:33:13.430+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:33:13.429+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:33:13.587+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:33:13.538+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:33:13.594+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:33:13.879+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.466 seconds
+[2023-07-26T20:33:44.524+0000] {processor.py:153} INFO - Started process (PID=9717) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:33:44.526+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:33:44.532+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:33:44.530+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:33:44.660+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:33:44.638+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:33:44.664+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:33:44.798+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.282 seconds
+[2023-07-26T20:34:15.081+0000] {processor.py:153} INFO - Started process (PID=9746) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:34:15.084+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:34:15.086+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:34:15.086+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:34:15.197+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:34:15.178+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:34:15.214+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:34:15.667+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.602 seconds
+[2023-07-26T20:34:46.153+0000] {processor.py:153} INFO - Started process (PID=9762) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:34:46.155+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:34:46.157+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:34:46.157+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:34:46.220+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:34:46.212+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:34:46.223+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:34:46.391+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.244 seconds
+[2023-07-26T20:35:16.471+0000] {processor.py:153} INFO - Started process (PID=9790) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:16.579+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:35:16.581+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:35:16.581+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:16.691+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:35:16.664+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:35:16.694+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:16.858+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.393 seconds
+[2023-07-26T20:35:47.354+0000] {processor.py:153} INFO - Started process (PID=9819) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:47.356+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:35:47.359+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:35:47.359+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:47.489+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:35:47.467+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3, in <module>
+    from airflow.operators.bash import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.bash' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py)
+[2023-07-26T20:35:47.500+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:47.803+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.464 seconds
+[2023-07-26T20:35:52.863+0000] {processor.py:153} INFO - Started process (PID=9820) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:52.869+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:35:52.881+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:35:52.881+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:52.961+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:35:52.958+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 3
+    from airflow.operators. import PythonOperator
+                                 ^
+SyntaxError: invalid syntax
+[2023-07-26T20:35:52.970+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:53.137+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.282 seconds
+[2023-07-26T20:35:56.226+0000] {processor.py:153} INFO - Started process (PID=9821) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:56.237+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:35:56.245+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:35:56.245+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:56.413+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:35:56.401+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 30, in <module>
+    python_callable='echo hello Africa',
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 411, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 162, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2023-07-26T20:35:56.414+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:35:56.804+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.589 seconds
+[2023-07-26T20:36:00.088+0000] {processor.py:153} INFO - Started process (PID=9832) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:36:00.091+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:36:00.104+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:36:00.104+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:36:00.304+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:36:00.254+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 30, in <module>
+    python_callable='echo hello Africa',
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 411, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 162, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2023-07-26T20:36:00.308+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:36:00.513+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.438 seconds
+[2023-07-26T20:36:31.471+0000] {processor.py:153} INFO - Started process (PID=9852) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:36:31.498+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:36:31.502+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:36:31.501+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:36:31.767+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:36:31.732+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 30, in <module>
+    python_callable='echo hello Africa',
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 411, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 162, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2023-07-26T20:36:31.777+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:36:32.012+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.550 seconds
+[2023-07-26T20:37:02.667+0000] {processor.py:153} INFO - Started process (PID=9875) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:02.702+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:37:02.706+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:02.705+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:02.801+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:02.778+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/python_operator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/python_operator.py", line 30, in <module>
+    python_callable='echo hello Africa',
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 411, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 162, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2023-07-26T20:37:02.803+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:03.071+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.414 seconds
+[2023-07-26T20:37:28.663+0000] {processor.py:153} INFO - Started process (PID=9895) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:28.676+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:37:28.680+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:28.679+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:28.993+0000] {processor.py:753} INFO - DAG(s) dict_keys(['my_python_dag_v1']) retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:30.020+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:30.020+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:my_python_dag_v1
+[2023-07-26T20:37:30.209+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:30.208+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:my_python_dag_v1
+[2023-07-26T20:37:30.528+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:30.526+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:my_python_dag_v1
+[2023-07-26T20:37:30.530+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:30.530+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-26T20:37:30.727+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:30.727+0000] {dag.py:2697} INFO - Creating ORM DAG for my_python_dag_v1
+[2023-07-26T20:37:30.946+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:30.945+0000] {dag.py:3427} INFO - Setting next_dagrun for my_python_dag_v1 to 2023-07-26T00:00:00+00:00, run_after=2023-07-27T00:00:00+00:00
+[2023-07-26T20:37:31.722+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 3.077 seconds
+[2023-07-26T20:37:34.636+0000] {processor.py:153} INFO - Started process (PID=9897) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:34.646+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:37:34.657+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:34.656+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:35.062+0000] {processor.py:753} INFO - DAG(s) dict_keys(['my_python_dag_v1']) retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:35.167+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:35.166+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-26T20:37:35.342+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:35.341+0000] {dag.py:3427} INFO - Setting next_dagrun for my_python_dag_v1 to 2023-07-26T00:00:00+00:00, run_after=2023-07-27T00:00:00+00:00
+[2023-07-26T20:37:35.617+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.989 seconds
+[2023-07-26T20:37:40.904+0000] {processor.py:153} INFO - Started process (PID=9898) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:40.907+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:37:40.909+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:40.909+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:41.019+0000] {processor.py:753} INFO - DAG(s) dict_keys(['my_python_dag_v1']) retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:37:41.068+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:41.068+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-26T20:37:41.128+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:37:41.128+0000] {dag.py:3427} INFO - Setting next_dagrun for my_python_dag_v1 to 2023-07-26T00:00:00+00:00, run_after=2023-07-27T00:00:00+00:00
+[2023-07-26T20:37:41.275+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.376 seconds
+[2023-07-26T20:38:12.411+0000] {processor.py:153} INFO - Started process (PID=9926) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:38:12.423+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:38:12.427+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:38:12.426+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:38:12.701+0000] {processor.py:753} INFO - DAG(s) dict_keys(['my_python_dag_v1']) retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:38:13.141+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:38:13.141+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-26T20:38:13.304+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:38:13.303+0000] {dag.py:3427} INFO - Setting next_dagrun for my_python_dag_v1 to 2023-07-26T00:00:00+00:00, run_after=2023-07-27T00:00:00+00:00
+[2023-07-26T20:38:13.727+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 1.341 seconds
+[2023-07-26T20:38:43.868+0000] {processor.py:153} INFO - Started process (PID=9942) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:38:43.871+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:38:43.872+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:38:43.872+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:38:43.933+0000] {processor.py:753} INFO - DAG(s) dict_keys(['my_python_dag_v1']) retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:38:44.007+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:38:44.006+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-26T20:38:44.067+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:38:44.067+0000] {dag.py:3427} INFO - Setting next_dagrun for my_python_dag_v1 to 2023-07-26T00:00:00+00:00, run_after=2023-07-27T00:00:00+00:00
+[2023-07-26T20:38:44.297+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 0.435 seconds
+[2023-07-26T20:39:15.620+0000] {processor.py:153} INFO - Started process (PID=9970) to work on /opt/airflow/dags/python_operator.py
+[2023-07-26T20:39:15.629+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/python_operator.py for tasks to queue
+[2023-07-26T20:39:15.639+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:39:15.639+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:39:16.179+0000] {processor.py:753} INFO - DAG(s) dict_keys(['my_python_dag_v1']) retrieved from /opt/airflow/dags/python_operator.py
+[2023-07-26T20:39:16.430+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:39:16.429+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-26T20:39:16.653+0000] {logging_mixin.py:137} INFO - [2023-07-26T20:39:16.652+0000] {dag.py:3427} INFO - Setting next_dagrun for my_python_dag_v1 to 2023-07-26T00:00:00+00:00, run_after=2023-07-27T00:00:00+00:00
+[2023-07-26T20:39:16.976+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/python_operator.py took 1.381 seconds

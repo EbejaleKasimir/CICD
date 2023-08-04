@@ -1,0 +1,24 @@
+[2023-07-30T03:56:52.017+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline_title_search.write_to_postgres scheduled__2023-07-29T00:00:00+00:00 [queued]>
+[2023-07-30T03:56:52.040+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline_title_search.write_to_postgres scheduled__2023-07-29T00:00:00+00:00 [queued]>
+[2023-07-30T03:56:52.041+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-30T03:56:52.043+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-30T03:56:52.044+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-30T03:56:52.296+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): write_to_postgres> on 2023-07-29 00:00:00+00:00
+[2023-07-30T03:56:52.304+0000] {standard_task_runner.py:55} INFO - Started process 33508 to run task
+[2023-07-30T03:56:52.310+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'job_data_pipeline_title_search', 'write_to_postgres', 'scheduled__2023-07-29T00:00:00+00:00', '--job-id', '3072', '--raw', '--subdir', 'DAGS_FOLDER/load_data_title_search_(Y).py', '--cfg-path', '/tmp/tmpea7cpks6']
+[2023-07-30T03:56:52.314+0000] {standard_task_runner.py:83} INFO - Job 3072: Subtask write_to_postgres
+[2023-07-30T03:56:52.540+0000] {task_command.py:389} INFO - Running <TaskInstance: job_data_pipeline_title_search.write_to_postgres scheduled__2023-07-29T00:00:00+00:00 [running]> on host f1ea17bde741
+[2023-07-30T03:56:52.902+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=job_data_pipeline_title_search
+AIRFLOW_CTX_TASK_ID=write_to_postgres
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-29T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-29T00:00:00+00:00
+[2023-07-30T03:56:53.013+0000] {base.py:73} INFO - Using connection ID 'my_connection' for task execution.
+[2023-07-30T03:56:53.540+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-07-30T03:56:53.562+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=job_data_pipeline_title_search, task_id=write_to_postgres, execution_date=20230729T000000, start_date=20230730T035652, end_date=20230730T035653
+[2023-07-30T03:56:53.894+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-07-30T03:56:53.999+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

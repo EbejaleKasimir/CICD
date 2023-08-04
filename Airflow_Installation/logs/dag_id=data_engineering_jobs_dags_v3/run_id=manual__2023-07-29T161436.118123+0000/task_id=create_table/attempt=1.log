@@ -1,0 +1,70 @@
+[2023-07-29T16:15:12.171+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineering_jobs_dags_v3.create_table manual__2023-07-29T16:14:36.118123+00:00 [queued]>
+[2023-07-29T16:15:12.337+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineering_jobs_dags_v3.create_table manual__2023-07-29T16:14:36.118123+00:00 [queued]>
+[2023-07-29T16:15:12.344+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T16:15:12.413+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-29T16:15:12.444+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T16:15:12.754+0000] {taskinstance.py:1304} INFO - Executing <Task(PostgresOperator): create_table> on 2023-07-29 16:14:36.118123+00:00
+[2023-07-29T16:15:12.805+0000] {standard_task_runner.py:55} INFO - Started process 15854 to run task
+[2023-07-29T16:15:12.871+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'data_engineering_jobs_dags_v3', 'create_table', 'manual__2023-07-29T16:14:36.118123+00:00', '--job-id', '2969', '--raw', '--subdir', 'DAGS_FOLDER/load_data_v3.py', '--cfg-path', '/tmp/tmpyxmf9wob']
+[2023-07-29T16:15:12.917+0000] {standard_task_runner.py:83} INFO - Job 2969: Subtask create_table
+[2023-07-29T16:15:14.210+0000] {task_command.py:389} INFO - Running <TaskInstance: data_engineering_jobs_dags_v3.create_table manual__2023-07-29T16:14:36.118123+00:00 [running]> on host f1ea17bde741
+[2023-07-29T16:15:17.022+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_engineering_jobs_dags_v3
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-29T16:14:36.118123+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-29T16:14:36.118123+00:00
+[2023-07-29T16:15:17.036+0000] {sql.py:253} INFO - Executing: 
+        CREATE TABLE IF NOT EXISTS jobs(
+            id VARCHAR(255),
+            salary_min DECIMAL,
+            salary_max DECIMAL,
+            description TEXT,
+            category VARCHAR(255),
+            label VARCHAR(255),
+            tag VARCHAR(255),
+            location TEXT,
+            longitude DECIMAL,
+            latitude DECIMAL,
+            job_title VARCHAR(255),
+            salary_is_predicted BOOLEAN,
+            adref VARCHAR(255),
+            created TIMESTAMP,
+            title VARCHAR(255),
+            redirect_url TEXT,
+            company TEXT,
+            class VARCHAR(255),
+            area TEXT
+        )
+    
+[2023-07-29T16:15:17.119+0000] {base.py:73} INFO - Using connection ID 'my_connection' for task execution.
+[2023-07-29T16:15:19.339+0000] {base.py:73} INFO - Using connection ID 'my_connection' for task execution.
+[2023-07-29T16:15:19.430+0000] {sql.py:364} INFO - Running statement: 
+        CREATE TABLE IF NOT EXISTS jobs(
+            id VARCHAR(255),
+            salary_min DECIMAL,
+            salary_max DECIMAL,
+            description TEXT,
+            category VARCHAR(255),
+            label VARCHAR(255),
+            tag VARCHAR(255),
+            location TEXT,
+            longitude DECIMAL,
+            latitude DECIMAL,
+            job_title VARCHAR(255),
+            salary_is_predicted BOOLEAN,
+            adref VARCHAR(255),
+            created TIMESTAMP,
+            title VARCHAR(255),
+            redirect_url TEXT,
+            company TEXT,
+            class VARCHAR(255),
+            area TEXT
+        )
+    , parameters: None
+[2023-07-29T16:15:20.052+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=data_engineering_jobs_dags_v3, task_id=create_table, execution_date=20230729T161436, start_date=20230729T161512, end_date=20230729T161520
+[2023-07-29T16:15:20.595+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-07-29T16:15:20.909+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

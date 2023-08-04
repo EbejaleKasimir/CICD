@@ -1,0 +1,42 @@
+[2023-07-31T00:00:49.008+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: my_postgres_dag_v3-1.insert_data scheduled__2023-07-30T00:00:00+00:00 [queued]>
+[2023-07-31T00:00:49.286+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: my_postgres_dag_v3-1.insert_data scheduled__2023-07-30T00:00:00+00:00 [queued]>
+[2023-07-31T00:00:49.301+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-31T00:00:49.431+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2023-07-31T00:00:49.459+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-31T00:00:50.071+0000] {taskinstance.py:1304} INFO - Executing <Task(PostgresOperator): insert_data> on 2023-07-30 00:00:00+00:00
+[2023-07-31T00:00:50.134+0000] {standard_task_runner.py:55} INFO - Started process 11822 to run task
+[2023-07-31T00:00:50.260+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_postgres_dag_v3-1', 'insert_data', 'scheduled__2023-07-30T00:00:00+00:00', '--job-id', '3099', '--raw', '--subdir', 'DAGS_FOLDER/postgres_operator_v2-2.py', '--cfg-path', '/tmp/tmpk26jb991']
+[2023-07-31T00:00:50.352+0000] {standard_task_runner.py:83} INFO - Job 3099: Subtask insert_data
+[2023-07-31T00:00:52.140+0000] {task_command.py:389} INFO - Running <TaskInstance: my_postgres_dag_v3-1.insert_data scheduled__2023-07-30T00:00:00+00:00 [running]> on host 4b7777060932
+[2023-07-31T00:00:54.069+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Byron
+AIRFLOW_CTX_DAG_ID=my_postgres_dag_v3-1
+AIRFLOW_CTX_TASK_ID=insert_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-30T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-30T00:00:00+00:00
+[2023-07-31T00:00:54.082+0000] {sql.py:253} INFO - Executing: INSERT INTO ***_users (name) VALUES ("Chidi", "Joseph", "Cindy", "Sarai")
+[2023-07-31T00:00:54.227+0000] {base.py:73} INFO - Using connection ID 'my_connection' for task execution.
+[2023-07-31T00:01:02.316+0000] {base.py:73} INFO - Using connection ID 'my_connection' for task execution.
+[2023-07-31T00:01:02.554+0000] {sql.py:364} INFO - Running statement: INSERT INTO ***_users (name) VALUES ("Chidi", "Joseph", "Cindy", "Sarai"), parameters: None
+[2023-07-31T00:01:03.181+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 261, in execute
+    return_last=self.return_last,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 338, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 369, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UndefinedColumn: column "Chidi" does not exist
+LINE 1: INSERT INTO ***_users (name) VALUES ("Chidi", "Joseph", ...
+                                                 ^
+
+[2023-07-31T00:01:04.075+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=my_postgres_dag_v3-1, task_id=insert_data, execution_date=20230730T000000, start_date=20230731T000049, end_date=20230731T000103
+[2023-07-31T00:01:05.327+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 3099 for task insert_data (column "Chidi" does not exist
+LINE 1: INSERT INTO ***_users (name) VALUES ("Chidi", "Joseph", ...
+                                                 ^
+; 11822)
+[2023-07-31T00:01:05.544+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-07-31T00:01:05.978+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

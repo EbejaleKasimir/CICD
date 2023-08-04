@@ -1,0 +1,5 @@
+[2023-07-29T12:42:38.415+0000] {processor.py:153} INFO - Started process (PID=1787) to work on /opt/airflow/dags/postgres_operator_v2 copy.py
+[2023-07-29T12:42:38.515+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/postgres_operator_v2 copy.py for tasks to queue
+[2023-07-29T12:42:38.583+0000] {logging_mixin.py:137} INFO - [2023-07-29T12:42:38.582+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/postgres_operator_v2 copy.py
+[2023-07-29T12:42:38.641+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/postgres_operator_v2 copy.py
+[2023-07-29T12:42:38.705+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/postgres_operator_v2 copy.py took 0.308 seconds

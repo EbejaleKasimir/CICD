@@ -1,0 +1,23 @@
+[2023-07-29T20:37:32.106+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline.get_jobs manual__2023-07-29T20:37:19.388874+00:00 [queued]>
+[2023-07-29T20:37:32.296+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline.get_jobs manual__2023-07-29T20:37:19.388874+00:00 [queued]>
+[2023-07-29T20:37:32.326+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T20:37:32.429+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-29T20:37:32.448+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T20:37:33.290+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): get_jobs> on 2023-07-29 20:37:19.388874+00:00
+[2023-07-29T20:37:33.386+0000] {standard_task_runner.py:55} INFO - Started process 26609 to run task
+[2023-07-29T20:37:33.507+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'job_data_pipeline', 'get_jobs', 'manual__2023-07-29T20:37:19.388874+00:00', '--job-id', '3031', '--raw', '--subdir', 'DAGS_FOLDER/load_data_v4.py', '--cfg-path', '/tmp/tmpdz78uglm']
+[2023-07-29T20:37:33.609+0000] {standard_task_runner.py:83} INFO - Job 3031: Subtask get_jobs
+[2023-07-29T20:37:34.862+0000] {task_command.py:389} INFO - Running <TaskInstance: job_data_pipeline.get_jobs manual__2023-07-29T20:37:19.388874+00:00 [running]> on host f1ea17bde741
+[2023-07-29T20:37:35.974+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=job_data_pipeline
+AIRFLOW_CTX_TASK_ID=get_jobs
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-29T20:37:19.388874+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-29T20:37:19.388874+00:00
+[2023-07-29T20:37:38.755+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-07-29T20:37:38.886+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=job_data_pipeline, task_id=get_jobs, execution_date=20230729T203719, start_date=20230729T203732, end_date=20230729T203738
+[2023-07-29T20:37:39.362+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-07-29T20:37:39.603+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,33 @@
+[2023-07-31T00:00:50.032+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: my_postgres_dag_v6.insert_data scheduled__2023-07-30T00:00:00+00:00 [queued]>
+[2023-07-31T00:00:50.312+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: my_postgres_dag_v6.insert_data scheduled__2023-07-30T00:00:00+00:00 [queued]>
+[2023-07-31T00:00:50.333+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-31T00:00:50.351+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2023-07-31T00:00:50.371+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-31T00:00:51.073+0000] {taskinstance.py:1304} INFO - Executing <Task(PostgresOperator): insert_data> on 2023-07-30 00:00:00+00:00
+[2023-07-31T00:00:51.172+0000] {standard_task_runner.py:55} INFO - Started process 11823 to run task
+[2023-07-31T00:00:51.215+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_postgres_dag_v6', 'insert_data', 'scheduled__2023-07-30T00:00:00+00:00', '--job-id', '3100', '--raw', '--subdir', 'DAGS_FOLDER/postgres_operator_v2.py', '--cfg-path', '/tmp/tmpv5ugemut']
+[2023-07-31T00:00:51.245+0000] {standard_task_runner.py:83} INFO - Job 3100: Subtask insert_data
+[2023-07-31T00:00:52.620+0000] {task_command.py:389} INFO - Running <TaskInstance: my_postgres_dag_v6.insert_data scheduled__2023-07-30T00:00:00+00:00 [running]> on host 4b7777060932
+[2023-07-31T00:00:54.226+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Byron
+AIRFLOW_CTX_DAG_ID=my_postgres_dag_v6
+AIRFLOW_CTX_TASK_ID=insert_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-30T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-30T00:00:00+00:00
+[2023-07-31T00:00:54.243+0000] {sql.py:253} INFO - Executing: 
+        INSERT INTO ***_users (name) VALUES ('Chidi'),('Joseph'),('Cindy'),('Sarai');
+       
+   
+[2023-07-31T00:00:54.382+0000] {base.py:73} INFO - Using connection ID 'my_connection' for task execution.
+[2023-07-31T00:01:01.411+0000] {base.py:73} INFO - Using connection ID 'my_connection' for task execution.
+[2023-07-31T00:01:01.849+0000] {sql.py:364} INFO - Running statement: 
+        INSERT INTO ***_users (name) VALUES ('Chidi'),('Joseph'),('Cindy'),('Sarai');
+       
+   , parameters: None
+[2023-07-31T00:01:02.297+0000] {sql.py:373} INFO - Rows affected: 4
+[2023-07-31T00:01:02.842+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=my_postgres_dag_v6, task_id=insert_data, execution_date=20230730T000000, start_date=20230731T000050, end_date=20230731T000102
+[2023-07-31T00:01:04.150+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-07-31T00:01:04.505+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

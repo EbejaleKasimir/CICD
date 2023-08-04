@@ -1,0 +1,23 @@
+[2023-07-31T13:17:31.989+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline_plus_csv.get_jobs manual__2023-07-31T13:17:08.117776+00:00 [queued]>
+[2023-07-31T13:17:32.214+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline_plus_csv.get_jobs manual__2023-07-31T13:17:08.117776+00:00 [queued]>
+[2023-07-31T13:17:32.306+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-31T13:17:32.399+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-31T13:17:32.543+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-31T13:17:35.020+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): get_jobs> on 2023-07-31 13:17:08.117776+00:00
+[2023-07-31T13:17:35.162+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'job_data_pipeline_plus_csv', 'get_jobs', 'manual__2023-07-31T13:17:08.117776+00:00', '--job-id', '3139', '--raw', '--subdir', 'DAGS_FOLDER/load_data_create_csv(Y).py', '--cfg-path', '/tmp/tmpo5_d1cwz']
+[2023-07-31T13:17:35.205+0000] {standard_task_runner.py:83} INFO - Job 3139: Subtask get_jobs
+[2023-07-31T13:17:35.158+0000] {standard_task_runner.py:55} INFO - Started process 4234 to run task
+[2023-07-31T13:17:36.810+0000] {task_command.py:389} INFO - Running <TaskInstance: job_data_pipeline_plus_csv.get_jobs manual__2023-07-31T13:17:08.117776+00:00 [running]> on host 4b7777060932
+[2023-07-31T13:17:39.246+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=job_data_pipeline_plus_csv
+AIRFLOW_CTX_TASK_ID=get_jobs
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-31T13:17:08.117776+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-31T13:17:08.117776+00:00
+[2023-07-31T13:17:42.058+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-07-31T13:17:42.335+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=job_data_pipeline_plus_csv, task_id=get_jobs, execution_date=20230731T131708, start_date=20230731T131732, end_date=20230731T131742
+[2023-07-31T13:17:43.142+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-07-31T13:17:44.563+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

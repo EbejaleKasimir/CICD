@@ -1,0 +1,24 @@
+[2023-08-02T16:15:16.879+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: project_user_etl_dag.transform manual__2023-08-02T16:14:54.999632+00:00 [queued]>
+[2023-08-02T16:15:16.964+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: project_user_etl_dag.transform manual__2023-08-02T16:14:54.999632+00:00 [queued]>
+[2023-08-02T16:15:16.972+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-02T16:15:17.038+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-08-02T16:15:17.041+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-02T16:15:17.519+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): transform> on 2023-08-02 16:14:54.999632+00:00
+[2023-08-02T16:15:17.572+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'project_user_etl_dag', 'transform', 'manual__2023-08-02T16:14:54.999632+00:00', '--job-id', '3232', '--raw', '--subdir', 'DAGS_FOLDER/project.py', '--cfg-path', '/tmp/tmp8wj5g7ls']
+[2023-08-02T16:15:17.584+0000] {standard_task_runner.py:83} INFO - Job 3232: Subtask transform
+[2023-08-02T16:15:17.609+0000] {standard_task_runner.py:55} INFO - Started process 13418 to run task
+[2023-08-02T16:15:18.343+0000] {task_command.py:389} INFO - Running <TaskInstance: project_user_etl_dag.transform manual__2023-08-02T16:14:54.999632+00:00 [running]> on host a4a69aba7e5b
+[2023-08-02T16:15:19.023+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=your_email@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=project_user_etl_dag
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-02T16:14:54.999632+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-02T16:14:54.999632+00:00
+[2023-08-02T16:15:19.397+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-08-02T16:15:19.451+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=project_user_etl_dag, task_id=transform, execution_date=20230802T161454, start_date=20230802T161516, end_date=20230802T161519
+[2023-08-02T16:15:19.647+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-08-02T16:15:19.843+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

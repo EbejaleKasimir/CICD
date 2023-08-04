@@ -1,0 +1,41 @@
+[2023-07-29T20:40:21.703+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline.write_to_postgres manual__2023-07-29T20:39:29.649852+00:00 [queued]>
+[2023-07-29T20:40:21.777+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline.write_to_postgres manual__2023-07-29T20:39:29.649852+00:00 [queued]>
+[2023-07-29T20:40:21.785+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T20:40:21.889+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-29T20:40:21.894+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T20:40:22.370+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): write_to_postgres> on 2023-07-29 20:39:29.649852+00:00
+[2023-07-29T20:40:22.477+0000] {standard_task_runner.py:55} INFO - Started process 26718 to run task
+[2023-07-29T20:40:22.497+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'job_data_pipeline', 'write_to_postgres', 'manual__2023-07-29T20:39:29.649852+00:00', '--job-id', '3036', '--raw', '--subdir', 'DAGS_FOLDER/load_data_v4.py', '--cfg-path', '/tmp/tmptf8_j3im']
+[2023-07-29T20:40:22.502+0000] {standard_task_runner.py:83} INFO - Job 3036: Subtask write_to_postgres
+[2023-07-29T20:40:23.249+0000] {task_command.py:389} INFO - Running <TaskInstance: job_data_pipeline.write_to_postgres manual__2023-07-29T20:39:29.649852+00:00 [running]> on host f1ea17bde741
+[2023-07-29T20:40:24.383+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=job_data_pipeline
+AIRFLOW_CTX_TASK_ID=write_to_postgres
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-29T20:39:29.649852+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-29T20:39:29.649852+00:00
+[2023-07-29T20:40:24.703+0000] {base.py:73} INFO - Using connection ID 'my_connection' for task execution.
+[2023-07-29T20:40:25.495+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/load_data_v4.py", line 90, in write_to_postgres
+    [tuple(x) for x in df.values]
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.SyntaxError: syntax error at or near "Title"
+LINE 1: ...ription,category,label,tag,location,longitude,Job Title,id,s...
+                                                             ^
+
+[2023-07-29T20:40:25.593+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=job_data_pipeline, task_id=write_to_postgres, execution_date=20230729T203929, start_date=20230729T204021, end_date=20230729T204025
+[2023-07-29T20:40:26.221+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 3036 for task write_to_postgres (syntax error at or near "Title"
+LINE 1: ...ription,category,label,tag,location,longitude,Job Title,id,s...
+                                                             ^
+; 26718)
+[2023-07-29T20:40:26.289+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-07-29T20:40:26.413+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

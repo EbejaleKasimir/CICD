@@ -1,0 +1,108 @@
+[2023-07-30T03:42:45.267+0000] {processor.py:153} INFO - Started process (PID=47706) to work on /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:42:45.271+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/load_data_keyword_search.py for tasks to queue
+[2023-07-30T03:42:45.278+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:42:45.276+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:42:48.029+0000] {processor.py:753} INFO - DAG(s) dict_keys(['job_data_pipeline_search']) retrieved from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:42:49.196+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:42:49.195+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:job_data_pipeline_search
+[2023-07-30T03:42:49.483+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:42:49.482+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:job_data_pipeline_search
+[2023-07-30T03:42:49.635+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:42:49.634+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:job_data_pipeline_search
+[2023-07-30T03:42:49.643+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:42:49.638+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-30T03:42:49.788+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:42:49.786+0000] {dag.py:2697} INFO - Creating ORM DAG for job_data_pipeline_search
+[2023-07-30T03:42:49.847+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:42:49.847+0000] {dag.py:3427} INFO - Setting next_dagrun for job_data_pipeline_search to 2023-07-29T00:00:00+00:00, run_after=2023-07-30T00:00:00+00:00
+[2023-07-30T03:42:50.142+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/load_data_keyword_search.py took 4.885 seconds
+[2023-07-30T03:43:21.781+0000] {processor.py:153} INFO - Started process (PID=47735) to work on /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:43:21.785+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/load_data_keyword_search.py for tasks to queue
+[2023-07-30T03:43:21.788+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:43:21.787+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:43:29.487+0000] {processor.py:753} INFO - DAG(s) dict_keys(['job_data_pipeline_search']) retrieved from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:43:30.067+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:43:30.066+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-30T03:43:30.320+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:43:30.320+0000] {dag.py:3427} INFO - Setting next_dagrun for job_data_pipeline_search to 2023-07-30T00:00:00+00:00, run_after=2023-07-31T00:00:00+00:00
+[2023-07-30T03:43:30.890+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/load_data_keyword_search.py took 9.128 seconds
+[2023-07-30T03:44:01.926+0000] {processor.py:153} INFO - Started process (PID=47780) to work on /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:44:01.928+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/load_data_keyword_search.py for tasks to queue
+[2023-07-30T03:44:01.932+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:44:01.932+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:44:04.429+0000] {processor.py:753} INFO - DAG(s) dict_keys(['job_data_pipeline_search']) retrieved from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:44:04.610+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:44:04.609+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-30T03:44:04.832+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:44:04.832+0000] {dag.py:3427} INFO - Setting next_dagrun for job_data_pipeline_search to 2023-07-30T00:00:00+00:00, run_after=2023-07-31T00:00:00+00:00
+[2023-07-30T03:44:05.030+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/load_data_keyword_search.py took 3.120 seconds
+[2023-07-30T03:44:35.960+0000] {processor.py:153} INFO - Started process (PID=47825) to work on /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:44:35.962+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/load_data_keyword_search.py for tasks to queue
+[2023-07-30T03:44:35.965+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:44:35.965+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:44:38.772+0000] {processor.py:753} INFO - DAG(s) dict_keys(['job_data_pipeline_search']) retrieved from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:44:39.000+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:44:38.999+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-30T03:44:39.152+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:44:39.152+0000] {dag.py:3427} INFO - Setting next_dagrun for job_data_pipeline_search to 2023-07-30T00:00:00+00:00, run_after=2023-07-31T00:00:00+00:00
+[2023-07-30T03:44:39.377+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/load_data_keyword_search.py took 3.436 seconds
+[2023-07-30T03:45:09.888+0000] {processor.py:153} INFO - Started process (PID=47868) to work on /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:45:09.891+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/load_data_keyword_search.py for tasks to queue
+[2023-07-30T03:45:09.894+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:45:09.893+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:45:13.774+0000] {processor.py:753} INFO - DAG(s) dict_keys(['job_data_pipeline_search']) retrieved from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:45:14.088+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:45:14.087+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-30T03:45:14.341+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:45:14.341+0000] {dag.py:3427} INFO - Setting next_dagrun for job_data_pipeline_search to 2023-07-30T00:00:00+00:00, run_after=2023-07-31T00:00:00+00:00
+[2023-07-30T03:45:14.958+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/load_data_keyword_search.py took 5.042 seconds
+[2023-07-30T03:45:45.334+0000] {processor.py:153} INFO - Started process (PID=47904) to work on /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:45:45.337+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/load_data_keyword_search.py for tasks to queue
+[2023-07-30T03:45:45.339+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:45:45.339+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:45:46.543+0000] {processor.py:753} INFO - DAG(s) dict_keys(['job_data_pipeline_search']) retrieved from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:45:46.625+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:45:46.625+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-30T03:45:46.676+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:45:46.676+0000] {dag.py:3427} INFO - Setting next_dagrun for job_data_pipeline_search to 2023-07-30T00:00:00+00:00, run_after=2023-07-31T00:00:00+00:00
+[2023-07-30T03:45:46.854+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/load_data_keyword_search.py took 1.527 seconds
+[2023-07-30T03:46:17.335+0000] {processor.py:153} INFO - Started process (PID=47950) to work on /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:46:17.338+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/load_data_keyword_search.py for tasks to queue
+[2023-07-30T03:46:17.340+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:46:17.339+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:46:18.580+0000] {processor.py:753} INFO - DAG(s) dict_keys(['job_data_pipeline_search']) retrieved from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:46:18.678+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:46:18.677+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-30T03:46:18.739+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:46:18.738+0000] {dag.py:3427} INFO - Setting next_dagrun for job_data_pipeline_search to 2023-07-30T00:00:00+00:00, run_after=2023-07-31T00:00:00+00:00
+[2023-07-30T03:46:18.903+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/load_data_keyword_search.py took 1.574 seconds
+[2023-07-30T03:46:49.329+0000] {processor.py:153} INFO - Started process (PID=47994) to work on /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:46:49.334+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/load_data_keyword_search.py for tasks to queue
+[2023-07-30T03:46:49.346+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:46:49.345+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:46:50.445+0000] {processor.py:753} INFO - DAG(s) dict_keys(['job_data_pipeline_search']) retrieved from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:46:50.520+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:46:50.519+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-30T03:46:50.611+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:46:50.611+0000] {dag.py:3427} INFO - Setting next_dagrun for job_data_pipeline_search to 2023-07-30T00:00:00+00:00, run_after=2023-07-31T00:00:00+00:00
+[2023-07-30T03:46:50.963+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/load_data_keyword_search.py took 1.649 seconds
+[2023-07-30T03:47:21.159+0000] {processor.py:153} INFO - Started process (PID=48028) to work on /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:47:21.161+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/load_data_keyword_search.py for tasks to queue
+[2023-07-30T03:47:21.164+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:47:21.163+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:47:22.057+0000] {processor.py:753} INFO - DAG(s) dict_keys(['job_data_pipeline_search']) retrieved from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:47:22.153+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:47:22.150+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-30T03:47:22.293+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:47:22.292+0000] {dag.py:3427} INFO - Setting next_dagrun for job_data_pipeline_search to 2023-07-30T00:00:00+00:00, run_after=2023-07-31T00:00:00+00:00
+[2023-07-30T03:47:22.441+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/load_data_keyword_search.py took 1.286 seconds
+[2023-07-30T03:48:00.557+0000] {processor.py:153} INFO - Started process (PID=48071) to work on /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:48:00.571+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/load_data_keyword_search.py for tasks to queue
+[2023-07-30T03:48:00.587+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:48:00.587+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:48:07.114+0000] {processor.py:753} INFO - DAG(s) dict_keys(['job_data_pipeline_search']) retrieved from /opt/airflow/dags/load_data_keyword_search.py
+[2023-07-30T03:48:07.784+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:48:07.783+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-07-30T03:48:08.244+0000] {logging_mixin.py:137} INFO - [2023-07-30T03:48:08.244+0000] {dag.py:3427} INFO - Setting next_dagrun for job_data_pipeline_search to 2023-07-30T00:00:00+00:00, run_after=2023-07-31T00:00:00+00:00
+[2023-07-30T03:48:08.498+0000] {processor.py:178} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 174, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 158, in _handle_dag_file_processing
+    callback_requests=callback_requests,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 75, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/dag_processing/processor.py", line 768, in process_file
+    dagbag.sync_to_db(processor_subdir=self._dag_directory, session=session)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 645, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/airflow/.local/lib/python3.7/site-packages/tenacity/__init__.py", line 384, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/airflow/.local/lib/python3.7/site-packages/tenacity/__init__.py", line 351, in iter
+    return fut.result()
+  File "/usr/local/lib/python3.7/concurrent/futures/_base.py", line 428, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 660, in sync_to_db
+    self.dags.values(), processor_subdir=processor_subdir, session=session
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2778, in bulk_write_to_db
+    DagCode.bulk_sync_to_db(filelocs, session=session)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagcode.py", line 117, in bulk_sync_to_db
+    os.path.getmtime(correct_maybe_zipped(fileloc)), tz=timezone.utc
+  File "/usr/local/lib/python3.7/genericpath.py", line 55, in getmtime
+    return os.stat(filename).st_mtime
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/load_data_keyword_search.py'
