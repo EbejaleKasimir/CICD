@@ -1,2 +1,0 @@
-[2023-07-29T10:53:55.954+0000] {taskinstance.py:1081} INFO - Dependencies not met for <TaskInstance: data_engineering_jobs_dags_v2.write_to_postgres scheduled__2023-03-15T00:00:00+00:00 [removed]>, dependency 'Task Instance State' FAILED: Task is in the 'removed' state.
-[2023-07-29T10:53:57.088+0000] {local_task_job.py:98} INFO - Task is not able to be run
