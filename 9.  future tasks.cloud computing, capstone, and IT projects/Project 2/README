@@ -14,9 +14,9 @@ This Python script is designed to create a PostgreSQL database, load data from a
 1. Clone the repository to your local machine.
 2. Install the required Python packages using pip:
 
-```bash
+bash
 pip install pandas sqlalchemy psycopg2-binary pyodbc
-```
+
 
 ## Usage
 
@@ -25,9 +25,9 @@ pip install pandas sqlalchemy psycopg2-binary pyodbc
 3. Update the SQL file path in the script.
 4. Run the script:
 
-```bash
+bash
 python script_name.py
-```
+
 
 ## Functions
 
