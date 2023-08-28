@@ -26,7 +26,7 @@ pip install pandas sqlalchemy psycopg2-binary pyodbc
 4. Run the script:
 
 bash
-python Geo.py
+python Geo_sql_embed.py
 
 
 ## Functions
@@ -42,7 +42,7 @@ python Geo.py
 2. It then creates a SQLAlchemy engine to interact with the newly created database.
 3. The script reads data from an Access database file into a pandas DataFrame.
 4. The data is then loaded into the PostgreSQL database.
-5. Finally, the script executes SQL commands from a file using the `execute_sql_file` function.
+5. Finally, the script executes SQL commands from a file using the `execute_sql_file` function for the Geo.py or within the Geo_sql_embed.py file.  
 
 ## Notes
 
