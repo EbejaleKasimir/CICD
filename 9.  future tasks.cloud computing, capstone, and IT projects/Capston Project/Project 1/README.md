@@ -26,9 +26,9 @@ This project is a Python script that creates a PostgreSQL database, imports a CS
     host: "localhost"
     port: "5432"
     database: "postgres"
-    Run the script:
+## Run the script:
 
-## python covid_19_data_analysis.py
+    python covid_19_data_analysis.py
 
 ## How it Works
 ## The script performs the following steps:
