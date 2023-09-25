@@ -1,0 +1,41 @@
+[2023-07-31T15:32:43.083+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline_plus_csv.write_to_csv manual__2023-07-31T15:27:02.396697+00:00 [queued]>
+[2023-07-31T15:32:43.125+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline_plus_csv.write_to_csv manual__2023-07-31T15:27:02.396697+00:00 [queued]>
+[2023-07-31T15:32:43.126+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-31T15:32:43.163+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-31T15:32:43.164+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-31T15:32:43.376+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): write_to_csv> on 2023-07-31 15:27:02.396697+00:00
+[2023-07-31T15:32:43.387+0000] {standard_task_runner.py:55} INFO - Started process 8078 to run task
+[2023-07-31T15:32:43.396+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'job_data_pipeline_plus_csv', 'write_to_csv', 'manual__2023-07-31T15:27:02.396697+00:00', '--job-id', '3189', '--raw', '--subdir', 'DAGS_FOLDER/load_data_create_csv(Y).py', '--cfg-path', '/tmp/tmph335op_w']
+[2023-07-31T15:32:43.400+0000] {standard_task_runner.py:83} INFO - Job 3189: Subtask write_to_csv
+[2023-07-31T15:32:43.638+0000] {task_command.py:389} INFO - Running <TaskInstance: job_data_pipeline_plus_csv.write_to_csv manual__2023-07-31T15:27:02.396697+00:00 [running]> on host 4b7777060932
+[2023-07-31T15:32:43.958+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=job_data_pipeline_plus_csv
+AIRFLOW_CTX_TASK_ID=write_to_csv
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-31T15:27:02.396697+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-31T15:27:02.396697+00:00
+[2023-07-31T15:32:43.996+0000] {load_data_create_csv(Y).py:48} INFO - Writing to file: Job_Search_2023-07-31.csv
+[2023-07-31T15:32:44.009+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/load_data_create_csv(Y).py", line 50, in write_to_csv
+    df.to_csv(file_path)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: '/opt/airflow/dags/Job_Search_2023-07-31.csv'
+[2023-07-31T15:32:44.074+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=job_data_pipeline_plus_csv, task_id=write_to_csv, execution_date=20230731T152702, start_date=20230731T153243, end_date=20230731T153244
+[2023-07-31T15:32:44.227+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 3189 for task write_to_csv ([Errno 13] Permission denied: '/opt/airflow/dags/Job_Search_2023-07-31.csv'; 8078)
+[2023-07-31T15:32:44.259+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-07-31T15:32:44.342+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

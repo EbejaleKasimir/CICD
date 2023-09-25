@@ -1,0 +1,33 @@
+[2023-07-27T08:19:13.992+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineer_jobs_dag.extract_relevant_records_from_overall_data scheduled__2022-09-14T00:00:00+00:00 [queued]>
+[2023-07-27T08:19:14.086+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineer_jobs_dag.extract_relevant_records_from_overall_data scheduled__2022-09-14T00:00:00+00:00 [queued]>
+[2023-07-27T08:19:14.088+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-27T08:19:14.116+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-27T08:19:14.132+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-27T08:19:14.301+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_relevant_records_from_overall_data> on 2022-09-14 00:00:00+00:00
+[2023-07-27T08:19:14.337+0000] {standard_task_runner.py:55} INFO - Started process 5676 to run task
+[2023-07-27T08:19:14.402+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'data_engineer_jobs_dag', 'extract_relevant_records_from_overall_data', 'scheduled__2022-09-14T00:00:00+00:00', '--job-id', '809', '--raw', '--subdir', 'DAGS_FOLDER/load_data.py', '--cfg-path', '/tmp/tmpwexehcgf']
+[2023-07-27T08:19:14.408+0000] {standard_task_runner.py:83} INFO - Job 809: Subtask extract_relevant_records_from_overall_data
+[2023-07-27T08:19:14.968+0000] {task_command.py:389} INFO - Running <TaskInstance: data_engineer_jobs_dag.extract_relevant_records_from_overall_data scheduled__2022-09-14T00:00:00+00:00 [running]> on host bc3380e7707e
+[2023-07-27T08:19:16.292+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=kasimir.Ikuenobe@hotmail.com
+AIRFLOW_CTX_DAG_OWNER=ebejale
+AIRFLOW_CTX_DAG_ID=data_engineer_jobs_dag
+AIRFLOW_CTX_TASK_ID=extract_relevant_records_from_overall_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-14T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-14T00:00:00+00:00
+[2023-07-27T08:19:16.369+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/load_data.py", line 63, in extract_relevant_records_from_overall_data
+    for i in range(len(data['data'])):
+KeyError: 'data'
+[2023-07-27T08:19:16.417+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=data_engineer_jobs_dag, task_id=extract_relevant_records_from_overall_data, execution_date=20220914T000000, start_date=20230727T081913, end_date=20230727T081916
+[2023-07-27T08:19:16.688+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 809 for task extract_relevant_records_from_overall_data ('data'; 5676)
+[2023-07-27T08:19:16.740+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-07-27T08:19:16.807+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

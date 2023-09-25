@@ -1,0 +1,24 @@
+[2023-07-27T09:15:38.052+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineer_jobs_dag.get_data_from_api scheduled__2023-02-03T00:00:00+00:00 [queued]>
+[2023-07-27T09:15:38.101+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineer_jobs_dag.get_data_from_api scheduled__2023-02-03T00:00:00+00:00 [queued]>
+[2023-07-27T09:15:38.104+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-27T09:15:38.178+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-27T09:15:38.180+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-27T09:15:38.341+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): get_data_from_api> on 2023-02-03 00:00:00+00:00
+[2023-07-27T09:15:38.380+0000] {standard_task_runner.py:55} INFO - Started process 9003 to run task
+[2023-07-27T09:15:38.373+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'data_engineer_jobs_dag', 'get_data_from_api', 'scheduled__2023-02-03T00:00:00+00:00', '--job-id', '1238', '--raw', '--subdir', 'DAGS_FOLDER/load_data.py', '--cfg-path', '/tmp/tmp8eh9xzxh']
+[2023-07-27T09:15:38.392+0000] {standard_task_runner.py:83} INFO - Job 1238: Subtask get_data_from_api
+[2023-07-27T09:15:39.032+0000] {task_command.py:389} INFO - Running <TaskInstance: data_engineer_jobs_dag.get_data_from_api scheduled__2023-02-03T00:00:00+00:00 [running]> on host bc3380e7707e
+[2023-07-27T09:15:40.062+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=kasimir.Ikuenobe@hotmail.com
+AIRFLOW_CTX_DAG_OWNER=ebejale
+AIRFLOW_CTX_DAG_ID=data_engineer_jobs_dag
+AIRFLOW_CTX_TASK_ID=get_data_from_api
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-03T00:00:00+00:00
+[2023-07-27T09:15:41.169+0000] {python.py:177} INFO - Done. Returned value was: {'message': 'You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch'}
+[2023-07-27T09:15:41.738+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=data_engineer_jobs_dag, task_id=get_data_from_api, execution_date=20230203T000000, start_date=20230727T091538, end_date=20230727T091541
+[2023-07-27T09:15:42.189+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-07-27T09:15:42.335+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

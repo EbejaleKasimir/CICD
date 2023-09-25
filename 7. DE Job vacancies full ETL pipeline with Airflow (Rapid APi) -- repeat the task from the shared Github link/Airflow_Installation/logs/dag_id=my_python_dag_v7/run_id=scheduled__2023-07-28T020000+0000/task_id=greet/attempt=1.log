@@ -1,0 +1,24 @@
+[2023-07-29T11:18:32.365+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: my_python_dag_v7.greet scheduled__2023-07-28T02:00:00+00:00 [queued]>
+[2023-07-29T11:18:32.534+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: my_python_dag_v7.greet scheduled__2023-07-28T02:00:00+00:00 [queued]>
+[2023-07-29T11:18:32.647+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T11:18:32.838+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2023-07-29T11:18:32.929+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T11:18:35.278+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): greet> on 2023-07-28 02:00:00+00:00
+[2023-07-29T11:18:35.311+0000] {standard_task_runner.py:55} INFO - Started process 2510 to run task
+[2023-07-29T11:18:35.407+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_python_dag_v7', 'greet', 'scheduled__2023-07-28T02:00:00+00:00', '--job-id', '2024', '--raw', '--subdir', 'DAGS_FOLDER/python_operatorv7.py', '--cfg-path', '/tmp/tmp1twd_q6a']
+[2023-07-29T11:18:35.423+0000] {standard_task_runner.py:83} INFO - Job 2024: Subtask greet
+[2023-07-29T11:18:36.931+0000] {task_command.py:389} INFO - Running <TaskInstance: my_python_dag_v7.greet scheduled__2023-07-28T02:00:00+00:00 [running]> on host f1ea17bde741
+[2023-07-29T11:18:39.838+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Byron
+AIRFLOW_CTX_DAG_ID=my_python_dag_v7
+AIRFLOW_CTX_TASK_ID=greet
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-28T02:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-28T02:00:00+00:00
+[2023-07-29T11:18:40.400+0000] {logging_mixin.py:137} INFO - my name is Charles and I am 32years old and I am from Lagos 
+[2023-07-29T11:18:40.526+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-07-29T11:18:40.960+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=my_python_dag_v7, task_id=greet, execution_date=20230728T020000, start_date=20230729T111832, end_date=20230729T111840
+[2023-07-29T11:18:42.116+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-07-29T11:18:42.487+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

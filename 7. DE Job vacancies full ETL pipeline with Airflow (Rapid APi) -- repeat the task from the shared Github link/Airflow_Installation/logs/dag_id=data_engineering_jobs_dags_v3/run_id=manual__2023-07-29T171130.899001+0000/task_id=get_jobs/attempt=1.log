@@ -1,0 +1,23 @@
+[2023-07-29T17:11:41.446+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineering_jobs_dags_v3.get_jobs manual__2023-07-29T17:11:30.899001+00:00 [queued]>
+[2023-07-29T17:11:41.531+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineering_jobs_dags_v3.get_jobs manual__2023-07-29T17:11:30.899001+00:00 [queued]>
+[2023-07-29T17:11:41.532+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T17:11:41.557+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-29T17:11:41.571+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T17:11:41.961+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): get_jobs> on 2023-07-29 17:11:30.899001+00:00
+[2023-07-29T17:11:41.971+0000] {standard_task_runner.py:55} INFO - Started process 18173 to run task
+[2023-07-29T17:11:41.984+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'data_engineering_jobs_dags_v3', 'get_jobs', 'manual__2023-07-29T17:11:30.899001+00:00', '--job-id', '2977', '--raw', '--subdir', 'DAGS_FOLDER/load_data_v3.py', '--cfg-path', '/tmp/tmpnoca6t1t']
+[2023-07-29T17:11:41.996+0000] {standard_task_runner.py:83} INFO - Job 2977: Subtask get_jobs
+[2023-07-29T17:11:42.659+0000] {task_command.py:389} INFO - Running <TaskInstance: data_engineering_jobs_dags_v3.get_jobs manual__2023-07-29T17:11:30.899001+00:00 [running]> on host f1ea17bde741
+[2023-07-29T17:11:43.971+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_engineering_jobs_dags_v3
+AIRFLOW_CTX_TASK_ID=get_jobs
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-29T17:11:30.899001+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-29T17:11:30.899001+00:00
+[2023-07-29T17:11:46.540+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-07-29T17:11:46.638+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=data_engineering_jobs_dags_v3, task_id=get_jobs, execution_date=20230729T171130, start_date=20230729T171141, end_date=20230729T171146
+[2023-07-29T17:11:46.871+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-07-29T17:11:47.874+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

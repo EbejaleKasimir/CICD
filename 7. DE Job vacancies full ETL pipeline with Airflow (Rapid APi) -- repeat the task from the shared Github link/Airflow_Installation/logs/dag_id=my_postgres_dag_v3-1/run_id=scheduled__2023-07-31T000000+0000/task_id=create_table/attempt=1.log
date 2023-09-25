@@ -1,0 +1,26 @@
+[2023-08-01T00:00:12.469+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: my_postgres_dag_v3-1.create_table scheduled__2023-07-31T00:00:00+00:00 [queued]>
+[2023-08-01T00:00:12.776+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: my_postgres_dag_v3-1.create_table scheduled__2023-07-31T00:00:00+00:00 [queued]>
+[2023-08-01T00:00:12.823+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-01T00:00:12.871+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2023-08-01T00:00:12.903+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-01T00:00:13.544+0000] {taskinstance.py:1304} INFO - Executing <Task(PostgresOperator): create_table> on 2023-07-31 00:00:00+00:00
+[2023-08-01T00:00:13.673+0000] {standard_task_runner.py:55} INFO - Started process 26429 to run task
+[2023-08-01T00:00:13.856+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'my_postgres_dag_v3-1', 'create_table', 'scheduled__2023-07-31T00:00:00+00:00', '--job-id', '3192', '--raw', '--subdir', 'DAGS_FOLDER/postgres_operator_v2-2.py', '--cfg-path', '/tmp/tmp4fu07t5r']
+[2023-08-01T00:00:14.012+0000] {standard_task_runner.py:83} INFO - Job 3192: Subtask create_table
+[2023-08-01T00:00:15.725+0000] {task_command.py:389} INFO - Running <TaskInstance: my_postgres_dag_v3-1.create_table scheduled__2023-07-31T00:00:00+00:00 [running]> on host 4b7777060932
+[2023-08-01T00:00:17.178+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Byron
+AIRFLOW_CTX_DAG_ID=my_postgres_dag_v3-1
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-31T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-07-31T00:00:00+00:00
+[2023-08-01T00:00:17.185+0000] {sql.py:253} INFO - Executing: CREATE TABLE IF NOT EXISTS ***_users (id SERIAL PRIMARY KEY, name VARCHAR(30))
+[2023-08-01T00:00:17.291+0000] {base.py:73} INFO - Using connection ID 'my_connection' for task execution.
+[2023-08-01T00:00:23.860+0000] {base.py:73} INFO - Using connection ID 'my_connection' for task execution.
+[2023-08-01T00:00:23.991+0000] {sql.py:364} INFO - Running statement: CREATE TABLE IF NOT EXISTS ***_users (id SERIAL PRIMARY KEY, name VARCHAR(30)), parameters: None
+[2023-08-01T00:00:24.228+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=my_postgres_dag_v3-1, task_id=create_table, execution_date=20230731T000000, start_date=20230801T000012, end_date=20230801T000024
+[2023-08-01T00:00:24.863+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-08-01T00:00:25.108+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

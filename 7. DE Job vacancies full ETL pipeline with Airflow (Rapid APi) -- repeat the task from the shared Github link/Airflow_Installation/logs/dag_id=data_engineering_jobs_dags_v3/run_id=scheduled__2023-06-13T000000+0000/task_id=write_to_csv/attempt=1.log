@@ -1,0 +1,23 @@
+[2023-07-29T15:20:42.395+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineering_jobs_dags_v3.write_to_csv scheduled__2023-06-13T00:00:00+00:00 [queued]>
+[2023-07-29T15:20:43.218+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: data_engineering_jobs_dags_v3.write_to_csv scheduled__2023-06-13T00:00:00+00:00 [queued]>
+[2023-07-29T15:20:43.227+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T15:20:43.256+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-07-29T15:20:43.324+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-29T15:20:44.839+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): write_to_csv> on 2023-06-13 00:00:00+00:00
+[2023-07-29T15:20:45.126+0000] {standard_task_runner.py:55} INFO - Started process 13269 to run task
+[2023-07-29T15:20:45.599+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'data_engineering_jobs_dags_v3', 'write_to_csv', 'scheduled__2023-06-13T00:00:00+00:00', '--job-id', '2758', '--raw', '--subdir', 'DAGS_FOLDER/load_data_v3.py', '--cfg-path', '/tmp/tmp9rgj6jn2']
+[2023-07-29T15:20:45.774+0000] {standard_task_runner.py:83} INFO - Job 2758: Subtask write_to_csv
+[2023-07-29T15:20:51.724+0000] {task_command.py:389} INFO - Running <TaskInstance: data_engineering_jobs_dags_v3.write_to_csv scheduled__2023-06-13T00:00:00+00:00 [running]> on host f1ea17bde741
+[2023-07-29T15:20:56.684+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_engineering_jobs_dags_v3
+AIRFLOW_CTX_TASK_ID=write_to_csv
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-13T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-13T00:00:00+00:00
+[2023-07-29T15:20:57.710+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-07-29T15:20:58.545+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=data_engineering_jobs_dags_v3, task_id=write_to_csv, execution_date=20230613T000000, start_date=20230729T152042, end_date=20230729T152058
+[2023-07-29T15:20:59.790+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-07-29T15:21:00.340+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,40 @@
+[2023-07-31T13:35:24.521+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline_plus_csv.write_to_csv manual__2023-07-31T13:28:59.976625+00:00 [queued]>
+[2023-07-31T13:35:24.609+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: job_data_pipeline_plus_csv.write_to_csv manual__2023-07-31T13:28:59.976625+00:00 [queued]>
+[2023-07-31T13:35:24.611+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-31T13:35:24.652+0000] {taskinstance.py:1284} INFO - Starting attempt 2 of 2
+[2023-07-31T13:35:24.653+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-07-31T13:35:24.924+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): write_to_csv> on 2023-07-31 13:28:59.976625+00:00
+[2023-07-31T13:35:24.976+0000] {standard_task_runner.py:55} INFO - Started process 4845 to run task
+[2023-07-31T13:35:25.055+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'job_data_pipeline_plus_csv', 'write_to_csv', 'manual__2023-07-31T13:28:59.976625+00:00', '--job-id', '3145', '--raw', '--subdir', 'DAGS_FOLDER/load_data_create_csv(Y).py', '--cfg-path', '/tmp/tmpe3t_wf6i']
+[2023-07-31T13:35:25.079+0000] {standard_task_runner.py:83} INFO - Job 3145: Subtask write_to_csv
+[2023-07-31T13:35:25.854+0000] {task_command.py:389} INFO - Running <TaskInstance: job_data_pipeline_plus_csv.write_to_csv manual__2023-07-31T13:28:59.976625+00:00 [running]> on host 4b7777060932
+[2023-07-31T13:35:27.003+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=job_data_pipeline_plus_csv
+AIRFLOW_CTX_TASK_ID=write_to_csv
+AIRFLOW_CTX_EXECUTION_DATE=2023-07-31T13:28:59.976625+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-07-31T13:28:59.976625+00:00
+[2023-07-31T13:35:27.212+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/load_data_create_csv(Y).py", line 43, in write_to_csv
+    df.to_csv(file_name, index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/user/OneDrive/Desktop/materials/Airflow_Installation/dags/Job_Search_2023-07-31.csv'
+[2023-07-31T13:35:27.383+0000] {taskinstance.py:1327} INFO - Marking task as FAILED. dag_id=job_data_pipeline_plus_csv, task_id=write_to_csv, execution_date=20230731T132859, start_date=20230731T133524, end_date=20230731T133527
+[2023-07-31T13:35:27.830+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 3145 for task write_to_csv ([Errno 2] No such file or directory: 'C:/Users/user/OneDrive/Desktop/materials/Airflow_Installation/dags/Job_Search_2023-07-31.csv'; 4845)
+[2023-07-31T13:35:28.019+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2023-07-31T13:35:28.321+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
