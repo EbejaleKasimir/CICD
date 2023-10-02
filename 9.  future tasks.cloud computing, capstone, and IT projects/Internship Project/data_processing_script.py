@@ -132,7 +132,10 @@ def clean_format_data(row):
       
     critical_review_id = row['Critical_Review_Cust_ID'] if row['Critical_Review_Cust_ID'] != 'None' else None
     critical_review_cust_name = row['Critical_Review_Cust_Name'] if row['Critical_Review_Cust_Name'] != 'None' else None
-    critical_review_cust_comment = row['Critical_Review_Cust_Comment'] if row['Critical_Review_Cust_Comment'] != 'None' else None
+    critical_review_cust_comment = row['Critical_Review_Cust_Comment']
+    if critical_review_cust_comment in nan_variants or critical_review_cust_comment == 'None':
+        critical_review_cust_comment = 'Unavailable'
+    
     critical_review_cust_comment_title = row['Critical_Review_Cust_Comment_Title'] if row['Critical_Review_Cust_Comment_Title'] != 'None' else None
     critical_review_cust_influenced = row['Critical_Review_Cust_Influenced'] if row['Critical_Review_Cust_Influenced'] != 'None' else 0  # Correctly handle NaN values
     critical_review_star_rating = row['Critical_Review_Cust_Star_Rating'] if pd.notna(row['Critical_Review_Cust_Star_Rating']) else 0.0
@@ -140,7 +143,9 @@ def clean_format_data(row):
 
     top_positive_review_id = row['Top_Positive_Review_Cust_ID'] if row['Top_Positive_Review_Cust_ID'] != 'None' else None
     top_positive_review_cust_name = row['Top_Positive_Review_Cust_Name'] if row['Top_Positive_Review_Cust_Name'] != 'None' else None
-    top_positive_review_cust_comment = row['Top_Positive_Review_Cust_Comment'] if row['Top_Positive_Review_Cust_Comment'] != 'None' else None
+    top_positive_review_cust_comment = row['Critical_Review_Cust_Comment']
+    if top_positive_review_cust_comment in nan_variants or top_positive_review_cust_comment == 'None':
+        top_positive_review_cust_comment = None    
     top_positive_review_cust_comment_title = row['Top_Positive_Review_Cust_Comment_Title'] if row['Top_Positive_Review_Cust_Comment_Title'] != 'None' else None
     top_positive_review_cust_influenced = row['Top_Positive_Review_Cust_Influenced'] if row['Top_Positive_Review_Cust_Influenced'] != 'None' else 0  # Correctly handle NaN values
     top_positive_review_star_rating = row['Top_Positive_Review_Cust_Star_Rating'] if pd.notna(row['Top_Positive_Review_Cust_Star_Rating']) else 0.0
