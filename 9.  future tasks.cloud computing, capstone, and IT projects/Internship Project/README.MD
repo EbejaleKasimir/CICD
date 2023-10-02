@@ -12,8 +12,9 @@ This project consists of two main Python scripts that scrape product data from A
 ## Description
 
 1. **Scraping Script**: This script utilizes Selenium and BeautifulSoup to scrape product information from Amazon for predefined categories such as Smartphones, Laptops, Video Games, Dresses, Shoes, and Accessories. The scraped data includes:
+
    **Data Dictionary**
-      **Dictionary:**
+
       **Product_ID:** The unique identifier for the product.
       **product:** The name and description of the product.
       **price in dollars:** The price of the product.
